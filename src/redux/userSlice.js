@@ -7,14 +7,15 @@ import data from "../users.json";
 //   initialState = JSON.parse(saveData)
 // }
 
-let users = data;
-const saveData = window.localStorage.getItem("cards");
-if (saveData) {
-  // users = JSON.parse(saveData);
-  users = JSON.parse(saveData);
-}
+// let users = data;
+// const saveData = window.localStorage.getItem("cards");
+// if (saveData) {
+//   // users = JSON.parse(saveData);
+//   users = JSON.parse(saveData);
+// }
+
 const initialState = {
-  users: users, 
+  users: data, 
   searchValue: "",
 }
 
